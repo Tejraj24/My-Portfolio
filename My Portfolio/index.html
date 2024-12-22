@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .header nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .header nav a {
+                margin: 5px 0;
+            }
+
+            .container {
+                width: 95%;
+            }
+
+            .section {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.5rem;
+            }
+
+            .section h2 {
+                font-size: 1.25rem;
+            }
+
+            .section p, .section ul {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#journal">Journal</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="about" class="section about">
+            <h2>About Me</h2>
+            <p>Hello! I am Tejraj Singh Rajput, a passionate Computer-Science-Student specializing in Python and Frontend. I enjoy creating and developing projects that make an impact.</p>
+        </section>
+
+        <section id="skills" class="section skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>Frontend</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
+
+        <section id="journal" class="section journal">
+            <h2>My Journal</h2>
+            <article>
+                <h3>Journal Entry 1</h3>
+                <p>Giving best for passion and updating myself for better version.</p>
+            </article>
+            <article>
+                <h3>Journal Entry 2</h3>
+                <p>Learning Best Acheving Best.</p>
+            </article>
+        </section>
+
+        <section id="contact" class="section contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to reach out!</p>
+            <p>Email: <a href="tejraj487@gmail.com">yourname@example.com</a></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Tejraj Singh Rajput. All rights reserved.</p>
+    </footer>
+</body>
+</html>
